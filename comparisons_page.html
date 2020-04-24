@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bootstrap Visualization Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS and style.css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity=“sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T” crossorigin=“anonymous”>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <!-- Navigation Section -->
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" style="background-color: black;" href="index.html">Latitude</a>
+            <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false" style="color: white">
+                            Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="max_temp_page.html">Max Temperature</a>
+                            <a class="dropdown-item" href="humidity_page.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness_page.html">Cloudiness</a>
+                            <a class="dropdown-item" href="windspeed_page.html">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparisons_page.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data_page.html">Data</a>
+                    </li>
+    
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Content Section -->
+    <div class="container">
+        <div class="row">
+            <div>
+                <!-- Left box  -->
+                <div class="box">
+                    <h3 class="title">Comparison: Latitude V Temp / Humidity / Cloudiness / Wind</h3>
+                    <hr>
+                    <p>Click a plot for further analysis.</p>
+                    <div class="container" style="padding-bottom: 40px;">
+                        <div class="row">
+                            <div class="col-lg-6" style="padding: 30px;">
+                                <div class="title">Lat V Max Temperature</div>
+                                <a href="max_temp_page.html">
+                                    <img class="panel" src="Resources/assets/images/Fig1.png" alt="Max Temperature Plot">
+                                </a>
+                            </div>
+                            <div class="col-lg-6" style="padding: 30px;">
+                                <div class="title">Lat V Humidity</div>
+                                <a href="humidity_page.html">
+                                    <img class="panel" src="Resources/assets/images/Fig2.png" alt="Humidity Plot">
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-lg-6" style="padding: 30px;">
+                                <div class="title">Lat V Cloudiness</div>
+                                <a href="cloudiness_page.html">
+                                    <img class="panel" src="Resources/assets/images/Fig3.png" alt="Cloudiness Plot">
+                                </a>
+    
+                            </div>
+                            <div class="col-lg-6" style="padding: 30px;">
+                                <div class="title">Lat V Wind Speed</div>
+                                <a href="windspeed_page.html">
+                                    <img class="panel" src="Resources/assets/images/Fig4.png" alt="Wind Speed Plot">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+<footer>
+    <div class="footer">Copyright &copy; Trevor Sauerbrey 2020 </div>
+</footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    </body>
+    
+    </html>
